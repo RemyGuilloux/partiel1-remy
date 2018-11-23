@@ -1,5 +1,5 @@
 package fr.formation.controllers;
 
 
-public class TransferTest {
+public class TransferController {
 }

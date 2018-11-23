@@ -5,7 +5,6 @@ import java.util.Map;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -28,10 +27,10 @@ public class RibController {
      * @return
      */
     @GET
-    @Path("/one/{rib}")
+    @Path("/one")
     @Produces(MediaType.APPLICATION_JSON)
-    public Rib one(@PathParam("rib") Object rib) {
-	return RIBS.get(rib);
+    public Rib one() {
+	return RIBS.get("a");
     }
 
     /**
